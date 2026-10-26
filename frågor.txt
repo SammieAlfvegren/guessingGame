@@ -1,0 +1,43 @@
+Fråga 1
+
+Vad är pull respektive push?
+
+git pull används för att hämta ändringar från ett remote repository till det lokala repositoriet.
+
+git push används för att skicka lokala commits till ett remote repository, exempelvis GitHub.
+
+
+Fråga 2
+
+När använder man log respektive status?
+
+git log används för att visa historiken över commits i repositoriet. Man kan se commit-id, författare och commit-meddelanden.
+
+git status används för att se aktuell status på projektet, exempelvis vilka filer som har ändrats, 
+vilka som är staged och om det finns commits som inte har pushats.
+
+
+Fråga 3
+
+Vad är en Git branch och varför är de viktiga?
+
+En branch är en separat utvecklingsgren i Git.
+Man kan utveckla nya funktioner eller testa ändringar utan att påverka huvudgrenen direkt.
+
+Branches är viktiga eftersom flera utvecklare kan arbeta samtidigt på olika funktioner.
+När arbetet är färdigt kan ändringarna mergeas med huvudgrenen.
+
+
+Fråga 4
+
+Det finns flera sätt att rulla tillbaka koden till ett tidigare tillstånd.
+
+Två vanliga metoder är git reset och git revert.
+
+git reset flyttar branchens pekare tillbaka till en tidigare commit. 
+Detta ändrar historiken och används främst när man arbetar lokalt.
+
+git revert skapar en ny commit som ångrar ändringarna från en tidigare commit.
+Historiken bevaras och därför är detta säkrare.
+
+
