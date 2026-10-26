@@ -1,4 +1,5 @@
 import java.io.Console;
+import java.util.Scanner;
 
 /**
  * Assignment 1 - Guessing Game
@@ -52,14 +53,19 @@ public Guesser(int low, int high) {
    * Task 3. Complete the code for the getReply() method.
    * In the current version below, it returns null each
    * call, which is not what this method is supposed to do.
-   * 
+   *
    * Instead, change the method so that it reads a reply
    * from the player, and if it is "T" or "F", we have
    * a valid reply. Return the String that you read from
    * the player.
    */
-  private String getReply(){
-    String reply = null;
+  private String getReply() {
+    String reply = new Scanner(System.in).nextLine();
+
+    while (!reply.equals("T") && !reply.equals("F")) {
+        System.out.println("Please reply T for true or F for false");
+        reply = new java.util.Scanner(System.in).nextLine();
+    }
     // Write code here which reads a String from the console.
     // As long as it is not a valid reply (one of "T" and "F")
     // write an error message, and read a new reply.
