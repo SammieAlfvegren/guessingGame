@@ -41,3 +41,8 @@ git revert skapar en ny commit som ångrar ändringarna från en tidigare commit
 Historiken bevaras och därför är detta säkrare.
 
 
+exempel:
+
+
+sammie_99@SammieLenovo:~/guessingGame$ git reset --hard HEAD~1
+HEAD is now at 8618d02 added run script
